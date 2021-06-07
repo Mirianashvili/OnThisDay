@@ -3,6 +3,7 @@ package repositories;
 import models.Event;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class EventRepository implements IEventRepository {
 
@@ -10,6 +11,7 @@ public class EventRepository implements IEventRepository {
 
     public EventRepository(ArrayList<Event> events){
         this.events = events;
+        events.sort(Comparator.comparingInt(Event::getYear));
     }
 
     @Override

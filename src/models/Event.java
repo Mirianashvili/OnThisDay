@@ -4,8 +4,7 @@ public class Event {
     int year;
     String description;
 
-    public Event() {
-    }
+    public Event() { }
 
     public Event(int year, String description) {
         this.year = year;

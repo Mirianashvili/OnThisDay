@@ -13,10 +13,10 @@ public class InMemoryEventRepository implements IEventRepository {
     public InMemoryEventRepository(){
         this.events = new ArrayList<>();
         Random rand = new Random();
-        for(int i = 0 ; i < 10 ; i++){
+        for(int i = 0 ; i < 100 ; i++){
             Event event = new Event();
-            event.setYear(rand.nextInt(2017));
-            event.setDescription("Something happend today");
+            event.setYear(rand.nextInt(2021));
+            event.setDescription("Something awesome happened today!");
             events.add(event);
         }
     }
