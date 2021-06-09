@@ -1,23 +1,22 @@
-import models.Event;
-import providers.FactsProvider;
-import repositories.IEventRepository;
-
+import models.Fact;
+import repositories.IFactRepository;
+import utils.*;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String []args) {
 
-        IEventRepository eventRepository = providers.FactsProvider.getEvents(
-                utils.TimeGenerator.getTime("may",5)
+        IFactRepository factRepository = providers.FactsProvider.getDocumentFacts(
+                TimeGenerator.getTime("may",5)
         );
 
-        //IEventRepository eventRepository = FactsProvider.getToday();
+        //IEventRepository factRepository = FactsProvider.getToday();
 
-        ArrayList<Event> events = eventRepository.getAll();
+        ArrayList<Fact> facts = factRepository.getAll();
 
-        for(int i = 0; i < events.size() ; i++){
-            Event event = events.get(i);
-            System.out.println(event);
+        for(int i = 0; i < facts.size() ; i++){
+            Fact fact = facts.get(i);
+            System.out.println(fact);
         }
 
     }

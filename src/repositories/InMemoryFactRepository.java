@@ -1,20 +1,19 @@
 package repositories;
 
-import models.Event;
-import repositories.IEventRepository;
+import models.Fact;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public class InMemoryEventRepository implements IEventRepository {
+public class InMemoryFactRepository implements IFactRepository {
 
-    ArrayList<Event> events;
+    ArrayList<Fact> events;
 
-    public InMemoryEventRepository(){
+    public InMemoryFactRepository(){
         this.events = new ArrayList<>();
         Random rand = new Random();
         for(int i = 0 ; i < 100 ; i++){
-            Event event = new Event();
+            Fact event = new Fact();
             event.setYear(rand.nextInt(2021));
             event.setDescription("Something awesome happened today!");
             events.add(event);
@@ -22,7 +21,7 @@ public class InMemoryEventRepository implements IEventRepository {
     }
 
     @Override
-    public ArrayList<Event> getAll() {
+    public ArrayList<Fact> getAll() {
         return events;
     }
 }

@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3f10522-4f0a-415d-b993-19afea1d0ef2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/repositories/FactRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnThisDay/FactsProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnThisDay/FactsProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnThisDay/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnThisDay/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnThisDay/TimeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnThisDay/TimeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnThisDay/models/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnThisDay/models/Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnThisDay/repositories/EventRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnThisDay/repositories/EventRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OnThisDay/repositories/InMemoryEventRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OnThisDay/repositories/InMemoryEventRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FactsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/FactsProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TimeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/TimeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/EventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/EventRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repositories/InMemoryEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/InMemoryEventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Fact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/providers/FactsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/FactsProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/EventRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/IEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/IFactRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repositories/InMemoryEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositories/InMemoryFactRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,13 +177,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -239,7 +235,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491806538887</updated>
-      <workItem from="1623094864039" duration="1847000" />
+      <workItem from="1623094864039" duration="1914000" />
+      <workItem from="1623263039729" duration="894000" />
     </task>
     <servers />
   </component>
@@ -299,6 +296,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

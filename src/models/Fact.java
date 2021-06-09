@@ -1,12 +1,12 @@
 package models;
 
-public class Event {
+public class Fact {
     int year;
     String description;
 
-    public Event() { }
+    public Fact() { }
 
-    public Event(int year, String description) {
+    public Fact(int year, String description) {
         this.year = year;
         this.description = description;
     }
@@ -29,7 +29,7 @@ public class Event {
 
     @Override
     public String toString() {
-        return "Event{" +
+        return "Fact{" +
                 "year=" + year +
                 ", description='" + description + '\'' +
                 '}';
